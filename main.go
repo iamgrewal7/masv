@@ -23,6 +23,8 @@ func main() {
 	}
 
 	result := solutions.SolutionOne(args)
+	// result := solutions.SolutionTwo(args)
+	// result := solutions.SolutionThree(args)
 	for _, r := range result {
 		fmt.Println(r)
 	}
