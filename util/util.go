@@ -7,7 +7,7 @@ import "fmt"
 func ValidateInput(inputList []string) error {
 	for i, s := range inputList {
 		if s[0] < '0' || s[0] > '9' {
-			return fmt.Errorf("expected a digit at index 0 in the argument no. %d (%s)", i+1, s)
+			return fmt.Errorf("expected a digit at the beginning of the argument no. %d (%s)", i+1, s)
 		}
 
 		if len(s) == 1 {
