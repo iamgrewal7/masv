@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/iamgrewal7/masv/solutions"
 	"github.com/iamgrewal7/masv/util"
 )
 
@@ -21,4 +22,8 @@ func main() {
 		return
 	}
 
+	result := solutions.SolutionOne(args)
+	for _, r := range result {
+		fmt.Println(r)
+	}
 }
